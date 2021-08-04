@@ -8,6 +8,15 @@
 
 ’‘’
 
+
+‘’‘
+解题思路
+
+这个题可以新建一个字典 dict_new ,然后遍历数组中的数，如果没出现就记录为 dict_new[nums[i]] = 1,如果字典中已经有了这个数，那就直接输出
+由于新建了一个新的字典，所以空间复杂度是n，遍历了数组，时间复杂度是n
+
+下面的解法是只需要进行遍历数组，然后直接在原数组上进行改变，空间复杂度将为1
+‘’‘
 #时间复杂度是O（n），空间复杂度是1
 
 class Solution:
@@ -18,7 +27,7 @@ class Solution:
       for i in range(len(nums)):
           if nums[i] == 0:
               nums[i] = n
-          tmp = abs(nums[i])
+          tmp = abs(nums[i]) 
           if nums[tmp] < 0 and tmp < n:
               return tmp
           elif nums[tmp] < 0 and tmp == n:

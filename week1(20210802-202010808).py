@@ -35,3 +35,9 @@ class Solution:
 solution = Solution()
 nums = [1,2,3,4,5,5,3,2]
 print(solution.findRepeatNumber(nums))
+
+# 方法二
+class Solution:
+    #def findRepeatNumber(self, nums: List[int]) -> int:
+    def findRepeatNumber(self,nums):
+        return max(set(nums), key=nums.count)

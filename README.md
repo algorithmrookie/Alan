@@ -1,1 +1,1 @@
-每周10道题，每道题都写明解题思路，并且保证能够运行成功
+每天1道题leetcode，lintcode或者jianzhioffer的题目
